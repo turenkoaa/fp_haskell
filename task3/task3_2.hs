@@ -1,3 +1,12 @@
+{-Дана следующая структура данных:
+
+data ReverseList a = RNil | RCons (ReverseList a) a
+представляющая собой перевёрнутый односвязный список элементов типа a.
+Реализуйте функции перевода данного представления в обычные списки,
+а также экземпляры классов Eq, Ord, Show, Monoid и Functor.
+Конструкцию deriving использовать, разумеется, нельзя.
+-}
+
 data ReverseList a = RNil | RCons (ReverseList a) a
 
 toList RNil = []
